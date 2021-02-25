@@ -16,32 +16,30 @@ console.log(
 const getCurrentDay = (order) => {
   let currentDay = null;
 
-  if (order > 0 || order <= 7) {
-    switch (order) {
-      case 1:
-        currentDay = "Понеділок";
-        break;
-      case 2:
-        currentDay = "Вівторок";
-        break;
-      case 3:
-        currentDay = "Середа";
-        break;
-      case 4:
-        currentDay = "Четвер";
-        break;
-      case 5:
-        currentDay = "Пятниця";
-        break;
-      case 6:
-        currentDay = "Субота";
-        break;
-      case 7:
-        currentDay = "Неділя";
-        break;
-    }
-  } else {
-    currentDay = "Невірний формат дати. Введіть число від 1 до 7";
+  switch (order) {
+    case 1:
+      currentDay = "Понеділок";
+      break;
+    case 2:
+      currentDay = "Вівторок";
+      break;
+    case 3:
+      currentDay = "Середа";
+      break;
+    case 4:
+      currentDay = "Четвер";
+      break;
+    case 5:
+      currentDay = "Пятниця";
+      break;
+    case 6:
+      currentDay = "Субота";
+      break;
+    case 7:
+      currentDay = "Неділя";
+      break;
+    default:
+      currentDay = "Невірний формат дати. Введіть число від 1 до 7";
   }
 
   return currentDay;
